@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='localvolts_api_wrapper',
+    name='localvolts_api',
     version='0.1',
     author='Ian Connor',
     author_email='ian@blissai.com',

@@ -1,11 +1,12 @@
+from typing import Any
 import requests
 from .auth import LocalvoltsAuth
 
 class MarketData:
     def __init__(self, json_data):
-        self.data = json_data
+        self.data = json_data['objResult']
 
-    def __getattr__(self, item):
+    def __getattr__(self, item: str) -> Any:
         """
         This method is called when an attribute lookup has not found the attribute in the usual places.
         It allows access to the dictionary keys as if they were attributes.
@@ -13,7 +14,13 @@ class MarketData:
         try:
             return self.data[item]
         except KeyError:
-            raise AttributeError(f"'MarketData' object has no attribute '{item}'")
+            raise AttributeError(f"'MarketData' missing '{item}'")
+
+    def __str__(self) -> str:
+        return str(self.data)
+
+    def __repr__(self) -> str:
+        return f"MarketData({self.data})"
 
 class MarketAPI:
     BASE_URL = "https://api.localvolts.com/v1"

@@ -1,5 +1,6 @@
 import unittest
 from unittest import mock
+import json
 from localvolts_api import MarketAPI, MarketData
 
 
@@ -8,10 +9,10 @@ class TestMarketAPI(unittest.TestCase):
     def test_get_market_stats(self, mock_requests):
         # Create a mock response
         mock_response = mock.Mock()
-        mock_response.json.return_value = {
-            'key1': 'value1',
-            'key2': 'value2'
-        }
+        mock_content = {}
+        with open('tests/market_stats.json') as f:
+            mock_content = json.load(f)
+        mock_response.json.return_value = mock_content
         mock_requests.get.return_value = mock_response
 
         # Create an instance of MarketAPI with a mock auth object
@@ -31,10 +32,8 @@ class TestMarketAPI(unittest.TestCase):
         self.assertIsInstance(result, MarketData)
 
         # Assert that the result contains the expected data
-        self.assertEqual(result.data, {
-            'key1': 'value1',
-            'key2': 'value2'
-        })
+        active_generators = mock_content['objResult']['active_generators']
+        self.assertEqual(result.active_generators, active_generators)
 
 if __name__ == '__main__':
     unittest.main()

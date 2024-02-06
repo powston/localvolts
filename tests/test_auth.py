@@ -9,8 +9,10 @@ class TestMarketAPI(unittest.TestCase):
         # Create a mock response
         mock_response = mock.Mock()
         mock_result = {
-            'key1': 'value1',
-            'key2': 'value2'
+            "objResult": {
+                'key1': 'value1',
+                'key2': 'value2'
+            }
         }
         mock_response.json.return_value = mock_result
         mock_requests.get.return_value = mock_response
@@ -28,8 +30,8 @@ class TestMarketAPI(unittest.TestCase):
         mock_requests.get.assert_called_once_with(
             'https://api.localvolts.com/v1/market/stats',
             headers={
-                'Authorization': 'ApiKey mock_api_key',
-                'Partner-ID': 'mock_partner_id'
+                'authorization': 'apikey mock_api_key',
+                'partner': 'mock_partner_id'
             }
         )
 
@@ -37,7 +39,7 @@ class TestMarketAPI(unittest.TestCase):
         self.assertIsInstance(result, MarketData)
 
         # Assert that the result contains the expected data
-        for key, value in mock_result.items():
+        for key, value in mock_result["objResult"].items():
             self.assertEqual(getattr(result, key), value)
 
 if __name__ == '__main__':

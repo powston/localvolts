@@ -16,6 +16,6 @@ class LocalvoltsAuth:
         :return: dict - A dictionary containing the necessary headers for API authentication.
         """
         return {
-            'Authorization': f'ApiKey {self.api_key}',
-            'Partner-ID': self.partner_id
+            'authorization': f'apikey {self.api_key}',
+            'partner': self.partner_id
         }

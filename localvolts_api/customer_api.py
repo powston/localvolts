@@ -1,4 +1,5 @@
 import requests
+from datetime import datetime
 
 class CustomerIntervalData:
     def __init__(self, json_data):
@@ -29,11 +30,18 @@ class CustomerAPI:
         """
         params = {'NMI': nmi}
         if from_time:
-            params['from'] = from_time
+            if isinstance(from_time, datetime):
+                params['from'] = from_time.strftime('%Y-%m-%dT%H:%M:00Z')
+            else:
+                params['from'] = from_time
         if to_time:
-            params['to'] = to_time
+            if isinstance(to_time, datetime):
+                params['to'] = to_time.strftime('%Y-%m-%dT%H:%M:00Z')
+            else:
+                params['to'] = to_time
 
         response = requests.get(f"{self.BASE_URL}/customer/interval", headers=self.auth.get_headers(), params=params)
-        response.raise_for_status()
-
+        if response.status_code != 200:
+            reason = response.content.decode('utf-8')
+            raise requests.HTTPError(f"{response.status_code} {response.reason}: {reason}")
         return CustomerIntervalData(response.json())
