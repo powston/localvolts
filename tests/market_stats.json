@@ -1,0 +1,2235 @@
+{
+    "objResult": {
+        "currentPeriod": "6th-Feb-2024, 10:25 - 10:30 AEST",
+        "active_loads": 319,
+        "electricity_purchased": 1392.46467312,
+        "active_generators": 188,
+        "electricity_sold": 389.87082768,
+        "emissions": 0,
+        "emissionsOnImports": 248.23787013453597,
+        "emissionsOnExports": 0,
+        "zeroEmissionOnImports": 0.7905032355332676,
+        "zeroEmissionOnExports": 1,
+        "sellPrice": {
+            "low": -1,
+            "median": 0.05999,
+            "high": 0.35
+        },
+        "contracts": 712,
+        "nodes": [
+            {
+                "postcode": "2009",
+                "latitude": -33.871222,
+                "longitude": 151.193055,
+                "type": "Load",
+                "volume": 0.053
+            },
+            {
+                "postcode": "2009",
+                "latitude": -33.871222,
+                "longitude": 151.193055,
+                "type": "Load",
+                "volume": 6.171
+            },
+            {
+                "postcode": "2009",
+                "latitude": -33.871222,
+                "longitude": 151.193055,
+                "type": "Load",
+                "volume": 0.0995
+            },
+            {
+                "postcode": "2021",
+                "latitude": -33.895705,
+                "longitude": 151.227236,
+                "type": "Load",
+                "volume": 0.06479057
+            },
+            {
+                "postcode": "2022",
+                "latitude": -33.896401,
+                "longitude": 151.245049,
+                "type": "Load",
+                "volume": 0.0221
+            },
+            {
+                "postcode": "2024",
+                "latitude": -33.904414,
+                "longitude": 151.259392,
+                "type": "Load",
+                "volume": 0.05442408
+            },
+            {
+                "postcode": "2026",
+                "latitude": -33.891041,
+                "longitude": 151.268968,
+                "type": "Gen",
+                "volume": 0.1012
+            },
+            {
+                "postcode": "2027",
+                "latitude": -33.868972,
+                "longitude": 151.250494,
+                "type": "Load",
+                "volume": 0.03109947
+            },
+            {
+                "postcode": "2031",
+                "latitude": -33.914832,
+                "longitude": 151.239167,
+                "type": "Load",
+                "volume": 0.02073298
+            },
+            {
+                "postcode": "2033",
+                "latitude": -33.91139,
+                "longitude": 151.218435,
+                "type": "Gen",
+                "volume": 0.08201667
+            },
+            {
+                "postcode": "2040",
+                "latitude": -33.878774,
+                "longitude": 151.156819,
+                "type": "Gen",
+                "volume": 0.0921
+            },
+            {
+                "postcode": "2041",
+                "latitude": -33.858556,
+                "longitude": 151.180095,
+                "type": "Gen",
+                "volume": 0.0081
+            },
+            {
+                "postcode": "2061",
+                "latitude": -33.848785,
+                "longitude": 151.212372,
+                "type": "Load",
+                "volume": 0.0011
+            },
+            {
+                "postcode": "2063",
+                "latitude": -33.812636,
+                "longitude": 151.214797,
+                "type": "Load",
+                "volume": 0.1496
+            },
+            {
+                "postcode": "2066",
+                "latitude": -33.818641,
+                "longitude": 151.160912,
+                "type": "Load",
+                "volume": 0.06997382
+            },
+            {
+                "postcode": "2068",
+                "latitude": -33.800881,
+                "longitude": 151.202715,
+                "type": "Gen",
+                "volume": 0.1458
+            },
+            {
+                "postcode": "2070",
+                "latitude": -33.78042,
+                "longitude": 151.162007,
+                "type": "Load",
+                "volume": 0.00259162
+            },
+            {
+                "postcode": "2073",
+                "latitude": -33.757296,
+                "longitude": 151.130278,
+                "type": "Gen",
+                "volume": 0.058
+            },
+            {
+                "postcode": "2075",
+                "latitude": -33.723693,
+                "longitude": 151.16729,
+                "type": "Gen",
+                "volume": 0.1279
+            },
+            {
+                "postcode": "2076",
+                "latitude": -33.723263,
+                "longitude": 151.108249,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "2076",
+                "latitude": -33.723263,
+                "longitude": 151.108249,
+                "type": "Load",
+                "volume": 0.04295
+            },
+            {
+                "postcode": "2076",
+                "latitude": -33.723263,
+                "longitude": 151.108249,
+                "type": "Load",
+                "volume": 0.08518642
+            },
+            {
+                "postcode": "2076",
+                "latitude": -33.723263,
+                "longitude": 151.108249,
+                "type": "Gen",
+                "volume": 0.22938333
+            },
+            {
+                "postcode": "2076",
+                "latitude": -33.723263,
+                "longitude": 151.108249,
+                "type": "Gen",
+                "volume": 0.3354
+            },
+            {
+                "postcode": "2077",
+                "latitude": -33.691922,
+                "longitude": 151.097508,
+                "type": "Load",
+                "volume": 0.04531638
+            },
+            {
+                "postcode": "2077",
+                "latitude": -33.691922,
+                "longitude": 151.097508,
+                "type": "Gen",
+                "volume": 0.0718
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.0026
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.1138
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.1407
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Load",
+                "volume": 0.0257
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.2657
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.0731
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Load",
+                "volume": 0.0641
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.06043333
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.0458
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.03888333
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.01393333
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.0014
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Load",
+                "volume": 0.08018333
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.4732
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.1485
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.0985
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Load",
+                "volume": 0.03056666
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.358
+            },
+            {
+                "postcode": "2081",
+                "latitude": -33.619756,
+                "longitude": 151.150498,
+                "type": "Gen",
+                "volume": 0.1954
+            },
+            {
+                "postcode": "2082",
+                "latitude": -33.561858,
+                "longitude": 151.168984,
+                "type": "Gen",
+                "volume": 0.16373333
+            },
+            {
+                "postcode": "2082",
+                "latitude": -33.561858,
+                "longitude": 151.168984,
+                "type": "Gen",
+                "volume": 0.23521667
+            },
+            {
+                "postcode": "2082",
+                "latitude": -33.561858,
+                "longitude": 151.168984,
+                "type": "Gen",
+                "volume": 0.1225
+            },
+            {
+                "postcode": "2088",
+                "latitude": -33.830687,
+                "longitude": 151.243351,
+                "type": "Load",
+                "volume": 0.10884816
+            },
+            {
+                "postcode": "2089",
+                "latitude": -33.838021,
+                "longitude": 151.216869,
+                "type": "Load",
+                "volume": 0.02073298
+            },
+            {
+                "postcode": "2093",
+                "latitude": -33.79315,
+                "longitude": 151.258069,
+                "type": "Load",
+                "volume": 0.01036649
+            },
+            {
+                "postcode": "2093",
+                "latitude": -33.79315,
+                "longitude": 151.258069,
+                "type": "Gen",
+                "volume": 0.0759
+            },
+            {
+                "postcode": "2094",
+                "latitude": -33.795227,
+                "longitude": 151.273242,
+                "type": "Load",
+                "volume": 0.0134
+            },
+            {
+                "postcode": "2095",
+                "latitude": -33.815482,
+                "longitude": 151.294675,
+                "type": "Load",
+                "volume": 0.02561133
+            },
+            {
+                "postcode": "2095",
+                "latitude": -33.815482,
+                "longitude": 151.294675,
+                "type": "Load",
+                "volume": 0.05394553
+            },
+            {
+                "postcode": "2095",
+                "latitude": -33.815482,
+                "longitude": 151.294675,
+                "type": "Load",
+                "volume": 0.02823505
+            },
+            {
+                "postcode": "2095",
+                "latitude": -33.815482,
+                "longitude": 151.294675,
+                "type": "Load",
+                "volume": 0.13532779
+            },
+            {
+                "postcode": "2095",
+                "latitude": -33.815482,
+                "longitude": 151.294675,
+                "type": "Load",
+                "volume": 0.03887434
+            },
+            {
+                "postcode": "2095",
+                "latitude": -33.815482,
+                "longitude": 151.294675,
+                "type": "Load",
+                "volume": 0.01661667
+            },
+            {
+                "postcode": "2095",
+                "latitude": -33.815482,
+                "longitude": 151.294675,
+                "type": "Gen",
+                "volume": 0.001
+            },
+            {
+                "postcode": "2095",
+                "latitude": -33.815482,
+                "longitude": 151.294675,
+                "type": "Load",
+                "volume": 0.02997338
+            },
+            {
+                "postcode": "2095",
+                "latitude": -33.815482,
+                "longitude": 151.294675,
+                "type": "Load",
+                "volume": 0.07256544
+            },
+            {
+                "postcode": "2099",
+                "latitude": -33.748914,
+                "longitude": 151.279999,
+                "type": "Load",
+                "volume": 0.0309871
+            },
+            {
+                "postcode": "2100",
+                "latitude": -33.766409,
+                "longitude": 151.257781,
+                "type": "Load",
+                "volume": 0.05728333
+            },
+            {
+                "postcode": "2100",
+                "latitude": -33.766409,
+                "longitude": 151.257781,
+                "type": "Gen",
+                "volume": 0.0258
+            },
+            {
+                "postcode": "2100",
+                "latitude": -33.766409,
+                "longitude": 151.257781,
+                "type": "Gen",
+                "volume": 0.0649
+            },
+            {
+                "postcode": "2100",
+                "latitude": -33.766409,
+                "longitude": 151.257781,
+                "type": "Gen",
+                "volume": 0.1404
+            },
+            {
+                "postcode": "2100",
+                "latitude": -33.766409,
+                "longitude": 151.257781,
+                "type": "Gen",
+                "volume": 0.0511
+            },
+            {
+                "postcode": "2102",
+                "latitude": -33.689941,
+                "longitude": 151.290953,
+                "type": "Gen",
+                "volume": 0.019
+            },
+            {
+                "postcode": "2103",
+                "latitude": -33.679336,
+                "longitude": 151.302825,
+                "type": "Load",
+                "volume": 0.08965
+            },
+            {
+                "postcode": "2103",
+                "latitude": -33.679336,
+                "longitude": 151.302825,
+                "type": "Load",
+                "volume": 0.18186667
+            },
+            {
+                "postcode": "2110",
+                "latitude": -33.836102,
+                "longitude": 151.149126,
+                "type": "Load",
+                "volume": 0.07291667
+            },
+            {
+                "postcode": "2112",
+                "latitude": -33.81658,
+                "longitude": 151.108447,
+                "type": "Load",
+                "volume": 0.0276
+            },
+            {
+                "postcode": "2113",
+                "latitude": -33.79419,
+                "longitude": 151.130233,
+                "type": "Gen",
+                "volume": 0.003
+            },
+            {
+                "postcode": "2116",
+                "latitude": -33.814368,
+                "longitude": 151.036941,
+                "type": "Gen",
+                "volume": 0.0762
+            },
+            {
+                "postcode": "2118",
+                "latitude": -33.775596,
+                "longitude": 151.043518,
+                "type": "Gen",
+                "volume": 0.004
+            },
+            {
+                "postcode": "2120",
+                "latitude": -33.731105,
+                "longitude": 151.07359,
+                "type": "Gen",
+                "volume": 0.133
+            },
+            {
+                "postcode": "2120",
+                "latitude": -33.731105,
+                "longitude": 151.07359,
+                "type": "Load",
+                "volume": 0.12741667
+            },
+            {
+                "postcode": "2120",
+                "latitude": -33.731105,
+                "longitude": 151.07359,
+                "type": "Gen",
+                "volume": 0.0938
+            },
+            {
+                "postcode": "2141",
+                "latitude": -33.872483,
+                "longitude": 151.044768,
+                "type": "Load",
+                "volume": 0.0417
+            },
+            {
+                "postcode": "2145",
+                "latitude": -33.813104,
+                "longitude": 150.957425,
+                "type": "Gen",
+                "volume": 0.1316
+            },
+            {
+                "postcode": "2147",
+                "latitude": -33.766075,
+                "longitude": 150.935836,
+                "type": "Load",
+                "volume": 0.176
+            },
+            {
+                "postcode": "2150",
+                "latitude": -33.814463,
+                "longitude": 151.006506,
+                "type": "Load",
+                "volume": 0.01231815
+            },
+            {
+                "postcode": "2170",
+                "latitude": -33.928392,
+                "longitude": 150.921448,
+                "type": "Load",
+                "volume": 0.01231815
+            },
+            {
+                "postcode": "2217",
+                "latitude": -33.974354,
+                "longitude": 151.140345,
+                "type": "Gen",
+                "volume": 0.33498333
+            },
+            {
+                "postcode": "2234",
+                "latitude": -34.021938,
+                "longitude": 151.004412,
+                "type": "Gen",
+                "volume": 0.0062
+            },
+            {
+                "postcode": "2250",
+                "latitude": -33.325373,
+                "longitude": 151.189243,
+                "type": "Gen",
+                "volume": 0.2344
+            },
+            {
+                "postcode": "2250",
+                "latitude": -33.325373,
+                "longitude": 151.189243,
+                "type": "Load",
+                "volume": 0.3846
+            },
+            {
+                "postcode": "2256",
+                "latitude": -33.482123,
+                "longitude": 151.331154,
+                "type": "Gen",
+                "volume": 0.4966
+            },
+            {
+                "postcode": "2256",
+                "latitude": -33.482123,
+                "longitude": 151.331154,
+                "type": "Gen",
+                "volume": 0.0614
+            },
+            {
+                "postcode": "2257",
+                "latitude": -33.520358,
+                "longitude": 151.374403,
+                "type": "Load",
+                "volume": 0.1937
+            },
+            {
+                "postcode": "2259",
+                "latitude": -33.208801,
+                "longitude": 151.377213,
+                "type": "Gen",
+                "volume": 0.1667
+            },
+            {
+                "postcode": "2259",
+                "latitude": -33.208801,
+                "longitude": 151.377213,
+                "type": "Load",
+                "volume": 0.01881793
+            },
+            {
+                "postcode": "2261",
+                "latitude": -33.315827,
+                "longitude": 151.519708,
+                "type": "Gen",
+                "volume": 0.2113
+            },
+            {
+                "postcode": "2280",
+                "latitude": -33.019715,
+                "longitude": 151.663175,
+                "type": "Load",
+                "volume": 0.01298333
+            },
+            {
+                "postcode": "2280",
+                "latitude": -33.019715,
+                "longitude": 151.663175,
+                "type": "Gen",
+                "volume": 0.175
+            },
+            {
+                "postcode": "2283",
+                "latitude": -33.019117,
+                "longitude": 151.57181,
+                "type": "Gen",
+                "volume": 0.1517
+            },
+            {
+                "postcode": "2287",
+                "latitude": -32.892577,
+                "longitude": 151.65807,
+                "type": "Load",
+                "volume": 0.07113333
+            },
+            {
+                "postcode": "2292",
+                "latitude": -32.931589,
+                "longitude": 151.740716,
+                "type": "Gen",
+                "volume": 0.2804
+            },
+            {
+                "postcode": "2304",
+                "latitude": -32.880319,
+                "longitude": 151.73862,
+                "type": "Load",
+                "volume": 0.01814136
+            },
+            {
+                "postcode": "2315",
+                "latitude": -32.746224,
+                "longitude": 152.193698,
+                "type": "Load",
+                "volume": 0.3219
+            },
+            {
+                "postcode": "2315",
+                "latitude": -32.746224,
+                "longitude": 152.193698,
+                "type": "Load",
+                "volume": 0.0185
+            },
+            {
+                "postcode": "2316",
+                "latitude": -32.7385,
+                "longitude": 152.058089,
+                "type": "Load",
+                "volume": 0.0002
+            },
+            {
+                "postcode": "2325",
+                "latitude": -32.977861,
+                "longitude": 151.317476,
+                "type": "Gen",
+                "volume": 0.3325
+            },
+            {
+                "postcode": "2328",
+                "latitude": -32.57693,
+                "longitude": 150.564817,
+                "type": "Gen",
+                "volume": 0.5327
+            },
+            {
+                "postcode": "2333",
+                "latitude": -32.248568,
+                "longitude": 150.701949,
+                "type": "Gen",
+                "volume": 0.7194
+            },
+            {
+                "postcode": "2357",
+                "latitude": -31.193339,
+                "longitude": 149.263874,
+                "type": "Gen",
+                "volume": 0.0333052
+            },
+            {
+                "postcode": "2425",
+                "latitude": -32.417598,
+                "longitude": 152.002451,
+                "type": "Gen",
+                "volume": 0.2236
+            },
+            {
+                "postcode": "2428",
+                "latitude": -32.196739,
+                "longitude": 152.454216,
+                "type": "Load",
+                "volume": 0.0849
+            },
+            {
+                "postcode": "2440",
+                "latitude": -30.375791,
+                "longitude": 153.019648,
+                "type": "Gen",
+                "volume": 0.0056703
+            },
+            {
+                "postcode": "2449",
+                "latitude": -30.62816,
+                "longitude": 152.737629,
+                "type": "Load",
+                "volume": 0.0499
+            },
+            {
+                "postcode": "2456",
+                "latitude": -30.073663,
+                "longitude": 153.143409,
+                "type": "Gen",
+                "volume": 0.1948
+            },
+            {
+                "postcode": "2460",
+                "latitude": -29.320772,
+                "longitude": 153.271074,
+                "type": "Gen",
+                "volume": 0.12566007
+            },
+            {
+                "postcode": "2460",
+                "latitude": -29.320772,
+                "longitude": 153.271074,
+                "type": "Load",
+                "volume": 0.01984604
+            },
+            {
+                "postcode": "2460",
+                "latitude": -29.320772,
+                "longitude": 153.271074,
+                "type": "Gen",
+                "volume": 0.6958
+            },
+            {
+                "postcode": "2470",
+                "latitude": -28.92786,
+                "longitude": 152.749759,
+                "type": "Gen",
+                "volume": 0.0139
+            },
+            {
+                "postcode": "2478",
+                "latitude": -28.865483,
+                "longitude": 153.532475,
+                "type": "Gen",
+                "volume": 0.1951
+            },
+            {
+                "postcode": "2478",
+                "latitude": -28.865483,
+                "longitude": 153.532475,
+                "type": "Gen",
+                "volume": 0.003
+            },
+            {
+                "postcode": "2478",
+                "latitude": -28.865483,
+                "longitude": 153.532475,
+                "type": "Gen",
+                "volume": 0.2328
+            },
+            {
+                "postcode": "2478",
+                "latitude": -28.865483,
+                "longitude": 153.532475,
+                "type": "Load",
+                "volume": 0.35581109
+            },
+            {
+                "postcode": "2479",
+                "latitude": -28.709545,
+                "longitude": 153.514963,
+                "type": "Load",
+                "volume": 0.2009
+            },
+            {
+                "postcode": "2480",
+                "latitude": -28.706486,
+                "longitude": 153.25943,
+                "type": "Gen",
+                "volume": 0.143
+            },
+            {
+                "postcode": "2480",
+                "latitude": -28.706486,
+                "longitude": 153.25943,
+                "type": "Gen",
+                "volume": 0.2466
+            },
+            {
+                "postcode": "2480",
+                "latitude": -28.706486,
+                "longitude": 153.25943,
+                "type": "Gen",
+                "volume": 0.1022
+            },
+            {
+                "postcode": "2480",
+                "latitude": -28.706486,
+                "longitude": 153.25943,
+                "type": "Gen",
+                "volume": 0.2746
+            },
+            {
+                "postcode": "2480",
+                "latitude": -28.706486,
+                "longitude": 153.25943,
+                "type": "Gen",
+                "volume": 0.1156
+            },
+            {
+                "postcode": "2480",
+                "latitude": -28.706486,
+                "longitude": 153.25943,
+                "type": "Gen",
+                "volume": 0.2399
+            },
+            {
+                "postcode": "2480",
+                "latitude": -28.706486,
+                "longitude": 153.25943,
+                "type": "Load",
+                "volume": 0.00141757
+            },
+            {
+                "postcode": "2480",
+                "latitude": -28.706486,
+                "longitude": 153.25943,
+                "type": "Load",
+                "volume": 0.01842846
+            },
+            {
+                "postcode": "2480",
+                "latitude": -28.706486,
+                "longitude": 153.25943,
+                "type": "Gen",
+                "volume": 0.14175741
+            },
+            {
+                "postcode": "2480",
+                "latitude": -28.706486,
+                "longitude": 153.25943,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "2480",
+                "latitude": -28.706486,
+                "longitude": 153.25943,
+                "type": "Load",
+                "volume": 0.19846037
+            },
+            {
+                "postcode": "2481",
+                "latitude": -28.660756,
+                "longitude": 153.592843,
+                "type": "Gen",
+                "volume": 0.01984604
+            },
+            {
+                "postcode": "2482",
+                "latitude": -28.547307,
+                "longitude": 153.432398,
+                "type": "Gen",
+                "volume": 0.0579
+            },
+            {
+                "postcode": "2482",
+                "latitude": -28.547307,
+                "longitude": 153.432398,
+                "type": "Gen",
+                "volume": 0.2611
+            },
+            {
+                "postcode": "2486",
+                "latitude": -28.215215,
+                "longitude": 153.479217,
+                "type": "Gen",
+                "volume": 0.0374
+            },
+            {
+                "postcode": "2487",
+                "latitude": -28.27973,
+                "longitude": 153.548588,
+                "type": "Gen",
+                "volume": 0.1133
+            },
+            {
+                "postcode": "2525",
+                "latitude": -34.437229,
+                "longitude": 150.818904,
+                "type": "Gen",
+                "volume": 0.1426
+            },
+            {
+                "postcode": "2529",
+                "latitude": -34.592433,
+                "longitude": 150.84584,
+                "type": "Gen",
+                "volume": 0.1878
+            },
+            {
+                "postcode": "2536",
+                "latitude": -35.671272,
+                "longitude": 150.125945,
+                "type": "Load",
+                "volume": 0.05014401
+            },
+            {
+                "postcode": "2546",
+                "latitude": -36.25486,
+                "longitude": 150.225372,
+                "type": "Gen",
+                "volume": 0.1813
+            },
+            {
+                "postcode": "2546",
+                "latitude": -36.25486,
+                "longitude": 150.225372,
+                "type": "Load",
+                "volume": 0.01417574
+            },
+            {
+                "postcode": "2546",
+                "latitude": -36.25486,
+                "longitude": 150.225372,
+                "type": "Load",
+                "volume": 0.01842846
+            },
+            {
+                "postcode": "2546",
+                "latitude": -36.25486,
+                "longitude": 150.225372,
+                "type": "Load",
+                "volume": 0.01701089
+            },
+            {
+                "postcode": "2549",
+                "latitude": -36.953196,
+                "longitude": 149.851694,
+                "type": "Gen",
+                "volume": 0.32463333
+            },
+            {
+                "postcode": "2577",
+                "latitude": -34.595027,
+                "longitude": 150.410978,
+                "type": "Gen",
+                "volume": 0.06569681
+            },
+            {
+                "postcode": "2582",
+                "latitude": -34.862038,
+                "longitude": 148.796477,
+                "type": "Gen",
+                "volume": 0.1441
+            },
+            {
+                "postcode": "2620",
+                "latitude": -35.317402,
+                "longitude": 149.257101,
+                "type": "Gen",
+                "volume": 0.02126361
+            },
+            {
+                "postcode": "2640",
+                "latitude": -36.016196,
+                "longitude": 147.026549,
+                "type": "Gen",
+                "volume": 0.664
+            },
+            {
+                "postcode": "2640",
+                "latitude": -36.016196,
+                "longitude": 147.026549,
+                "type": "Load",
+                "volume": 0.06237326
+            },
+            {
+                "postcode": "2647",
+                "latitude": -35.905463,
+                "longitude": 145.976131,
+                "type": "Gen",
+                "volume": 0.4511
+            },
+            {
+                "postcode": "2756",
+                "latitude": -33.466271,
+                "longitude": 150.88744,
+                "type": "Load",
+                "volume": 0.0998
+            },
+            {
+                "postcode": "2780",
+                "latitude": -33.832923,
+                "longitude": 150.435639,
+                "type": "Load",
+                "volume": 0.00962558
+            },
+            {
+                "postcode": "2795",
+                "latitude": -33.820797,
+                "longitude": 149.474401,
+                "type": "Gen",
+                "volume": 0.29233333
+            },
+            {
+                "postcode": "2902",
+                "latitude": -35.389263,
+                "longitude": 149.049785,
+                "type": "Gen",
+                "volume": 0.1018
+            },
+            {
+                "postcode": "4006",
+                "latitude": -27.36618,
+                "longitude": 153.175242,
+                "type": "Gen",
+                "volume": 0.0801
+            },
+            {
+                "postcode": "4064",
+                "latitude": -27.464676,
+                "longitude": 152.999039,
+                "type": "Load",
+                "volume": 0.479
+            },
+            {
+                "postcode": "4069",
+                "latitude": -27.502784,
+                "longitude": 152.898911,
+                "type": "Gen",
+                "volume": 0.0001
+            },
+            {
+                "postcode": "4073",
+                "latitude": -27.549179,
+                "longitude": 152.951385,
+                "type": "Gen",
+                "volume": 0.0726
+            },
+            {
+                "postcode": "4075",
+                "latitude": -27.552135,
+                "longitude": 152.975619,
+                "type": "Gen",
+                "volume": 0.05379294
+            },
+            {
+                "postcode": "4075",
+                "latitude": -27.552135,
+                "longitude": 152.975619,
+                "type": "Load",
+                "volume": 0.03143746
+            },
+            {
+                "postcode": "4076",
+                "latitude": -27.584561,
+                "longitude": 152.921067,
+                "type": "Load",
+                "volume": 3.7226
+            },
+            {
+                "postcode": "4101",
+                "latitude": -27.484254,
+                "longitude": 153.009661,
+                "type": "Load",
+                "volume": 0.01793098
+            },
+            {
+                "postcode": "4101",
+                "latitude": -27.484254,
+                "longitude": 153.009661,
+                "type": "Load",
+                "volume": 0.01075859
+            },
+            {
+                "postcode": "4107",
+                "latitude": -27.552052,
+                "longitude": 153.030643,
+                "type": "Load",
+                "volume": 0.09108075
+            },
+            {
+                "postcode": "4110",
+                "latitude": -27.612178,
+                "longitude": 153.009526,
+                "type": "Load",
+                "volume": 0.05295463
+            },
+            {
+                "postcode": "4118",
+                "latitude": -27.673806,
+                "longitude": 153.027323,
+                "type": "Gen",
+                "volume": 0.0445
+            },
+            {
+                "postcode": "4121",
+                "latitude": -27.526966,
+                "longitude": 153.053952,
+                "type": "Gen",
+                "volume": 0.0003
+            },
+            {
+                "postcode": "4128",
+                "latitude": -27.652403,
+                "longitude": 153.174214,
+                "type": "Gen",
+                "volume": 0.1546
+            },
+            {
+                "postcode": "4129",
+                "latitude": -27.681519,
+                "longitude": 153.186817,
+                "type": "Gen",
+                "volume": 0.3062
+            },
+            {
+                "postcode": "4129",
+                "latitude": -27.681519,
+                "longitude": 153.186817,
+                "type": "Gen",
+                "volume": 0.1474
+            },
+            {
+                "postcode": "4152",
+                "latitude": -27.501349,
+                "longitude": 153.096812,
+                "type": "Gen",
+                "volume": 0.0038
+            },
+            {
+                "postcode": "4207",
+                "latitude": -27.733991,
+                "longitude": 153.204523,
+                "type": "Gen",
+                "volume": 0.0061
+            },
+            {
+                "postcode": "4208",
+                "latitude": -27.767029,
+                "longitude": 153.27631,
+                "type": "Load",
+                "volume": 0.0613
+            },
+            {
+                "postcode": "4208",
+                "latitude": -27.767029,
+                "longitude": 153.27631,
+                "type": "Gen",
+                "volume": 0.0024
+            },
+            {
+                "postcode": "4213",
+                "latitude": -28.110164,
+                "longitude": 153.318916,
+                "type": "Gen",
+                "volume": 0.0484
+            },
+            {
+                "postcode": "4213",
+                "latitude": -28.110164,
+                "longitude": 153.318916,
+                "type": "Gen",
+                "volume": 0.0104
+            },
+            {
+                "postcode": "4214",
+                "latitude": -27.967005,
+                "longitude": 153.365576,
+                "type": "Gen",
+                "volume": 0.0531
+            },
+            {
+                "postcode": "4218",
+                "latitude": -28.037627,
+                "longitude": 153.41692,
+                "type": "Load",
+                "volume": 0.02510337
+            },
+            {
+                "postcode": "4223",
+                "latitude": -28.19076,
+                "longitude": 153.415088,
+                "type": "Gen",
+                "volume": 0.279
+            },
+            {
+                "postcode": "4223",
+                "latitude": -28.19076,
+                "longitude": 153.415088,
+                "type": "Gen",
+                "volume": 0.0241
+            },
+            {
+                "postcode": "4223",
+                "latitude": -28.19076,
+                "longitude": 153.415088,
+                "type": "Load",
+                "volume": 0.1457
+            },
+            {
+                "postcode": "4223",
+                "latitude": -28.19076,
+                "longitude": 153.415088,
+                "type": "Load",
+                "volume": 0.4097
+            },
+            {
+                "postcode": "4223",
+                "latitude": -28.19076,
+                "longitude": 153.415088,
+                "type": "Gen",
+                "volume": 0.00717239
+            },
+            {
+                "postcode": "4300",
+                "latitude": -27.682273,
+                "longitude": 152.884999,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "4306",
+                "latitude": -27.480898,
+                "longitude": 152.725408,
+                "type": "Load",
+                "volume": 0.0125
+            },
+            {
+                "postcode": "4306",
+                "latitude": -27.480898,
+                "longitude": 152.725408,
+                "type": "Gen",
+                "volume": 0.0025
+            },
+            {
+                "postcode": "4309",
+                "latitude": -27.98728,
+                "longitude": 152.523366,
+                "type": "Gen",
+                "volume": 0.02868957
+            },
+            {
+                "postcode": "4500",
+                "latitude": -27.307845,
+                "longitude": 152.939438,
+                "type": "Gen",
+                "volume": 0.005
+            },
+            {
+                "postcode": "4503",
+                "latitude": -27.240638,
+                "longitude": 152.993187,
+                "type": "Gen",
+                "volume": 0.06255154
+            },
+            {
+                "postcode": "4551",
+                "latitude": -26.828067,
+                "longitude": 153.088435,
+                "type": "Load",
+                "volume": 0.1624
+            },
+            {
+                "postcode": "4551",
+                "latitude": -26.828067,
+                "longitude": 153.088435,
+                "type": "Gen",
+                "volume": 0.0204
+            },
+            {
+                "postcode": "4551",
+                "latitude": -26.828067,
+                "longitude": 153.088435,
+                "type": "Gen",
+                "volume": 0.0017
+            },
+            {
+                "postcode": "4551",
+                "latitude": -26.828067,
+                "longitude": 153.088435,
+                "type": "Gen",
+                "volume": 0.19724079
+            },
+            {
+                "postcode": "4551",
+                "latitude": -26.828067,
+                "longitude": 153.088435,
+                "type": "Load",
+                "volume": 5.3582
+            },
+            {
+                "postcode": "4551",
+                "latitude": -26.828067,
+                "longitude": 153.088435,
+                "type": "Gen",
+                "volume": 0.02868957
+            },
+            {
+                "postcode": "4551",
+                "latitude": -26.828067,
+                "longitude": 153.088435,
+                "type": "Gen",
+                "volume": 0.0154
+            },
+            {
+                "postcode": "4556",
+                "latitude": -26.700379,
+                "longitude": 153.049784,
+                "type": "Load",
+                "volume": 0.1295
+            },
+            {
+                "postcode": "4556",
+                "latitude": -26.700379,
+                "longitude": 153.049784,
+                "type": "Load",
+                "volume": 0.43034355
+            },
+            {
+                "postcode": "4558",
+                "latitude": -26.655067,
+                "longitude": 153.075373,
+                "type": "Gen",
+                "volume": 0.0993
+            },
+            {
+                "postcode": "4563",
+                "latitude": -26.425754,
+                "longitude": 152.909206,
+                "type": "Gen",
+                "volume": 0.013
+            },
+            {
+                "postcode": "4570",
+                "latitude": -26.153831,
+                "longitude": 152.616943,
+                "type": "Load",
+                "volume": 0.08080589
+            },
+            {
+                "postcode": "4807",
+                "latitude": -19.914965,
+                "longitude": 147.133033,
+                "type": "Gen",
+                "volume": 0.00555678
+            },
+            {
+                "postcode": "5011",
+                "latitude": -34.883282,
+                "longitude": 138.527677,
+                "type": "Load",
+                "volume": 0.2377
+            },
+            {
+                "postcode": "5042",
+                "latitude": -35.007341,
+                "longitude": 138.575023,
+                "type": "Load",
+                "volume": 0.0028
+            },
+            {
+                "postcode": "5049",
+                "latitude": -35.045389,
+                "longitude": 138.52272,
+                "type": "Load",
+                "volume": 0.39736632
+            },
+            {
+                "postcode": "5052",
+                "latitude": -35.003888,
+                "longitude": 138.618684,
+                "type": "Gen",
+                "volume": 0.0199
+            },
+            {
+                "postcode": "5061",
+                "latitude": -34.957195,
+                "longitude": 138.60648,
+                "type": "Load",
+                "volume": 0.1159013
+            },
+            {
+                "postcode": "5062",
+                "latitude": -35.004063,
+                "longitude": 138.602387,
+                "type": "Gen",
+                "volume": 0.81841274
+            },
+            {
+                "postcode": "5066",
+                "latitude": -34.940962,
+                "longitude": 138.66029,
+                "type": "Load",
+                "volume": 0.0358
+            },
+            {
+                "postcode": "5066",
+                "latitude": -34.940962,
+                "longitude": 138.66029,
+                "type": "Load",
+                "volume": 0.1543
+            },
+            {
+                "postcode": "5072",
+                "latitude": -34.912078,
+                "longitude": 138.696113,
+                "type": "Gen",
+                "volume": 0.17528333
+            },
+            {
+                "postcode": "5075",
+                "latitude": -34.861332,
+                "longitude": 138.675254,
+                "type": "Gen",
+                "volume": 0.0473
+            },
+            {
+                "postcode": "5075",
+                "latitude": -34.861332,
+                "longitude": 138.675254,
+                "type": "Gen",
+                "volume": 0.0274
+            },
+            {
+                "postcode": "5087",
+                "latitude": -34.876988,
+                "longitude": 138.637707,
+                "type": "Gen",
+                "volume": 0.0264
+            },
+            {
+                "postcode": "5107",
+                "latitude": -34.784447,
+                "longitude": 138.609874,
+                "type": "Gen",
+                "volume": 0.20089559
+            },
+            {
+                "postcode": "5351",
+                "latitude": -34.638218,
+                "longitude": 138.897802,
+                "type": "Gen",
+                "volume": 0.4069
+            },
+            {
+                "postcode": "5352",
+                "latitude": -34.549295,
+                "longitude": 138.939049,
+                "type": "Load",
+                "volume": 0.10044779
+            },
+            {
+                "postcode": "5353",
+                "latitude": -34.577328,
+                "longitude": 139.326979,
+                "type": "Load",
+                "volume": 0.0091
+            },
+            {
+                "postcode": "7000",
+                "latitude": -42.878355,
+                "longitude": 147.308002,
+                "type": "Load",
+                "volume": 0.6686
+            },
+            {
+                "postcode": "7000",
+                "latitude": -42.878355,
+                "longitude": 147.308002,
+                "type": "Load",
+                "volume": 0.0869
+            },
+            {
+                "postcode": "7000",
+                "latitude": -42.878355,
+                "longitude": 147.308002,
+                "type": "Load",
+                "volume": 0.17011884
+            },
+            {
+                "postcode": "7000",
+                "latitude": -42.878355,
+                "longitude": 147.308002,
+                "type": "Load",
+                "volume": 0.12028605
+            },
+            {
+                "postcode": "7000",
+                "latitude": -42.878355,
+                "longitude": 147.308002,
+                "type": "Load",
+                "volume": 1.0927
+            },
+            {
+                "postcode": "7000",
+                "latitude": -42.878355,
+                "longitude": 147.308002,
+                "type": "Gen",
+                "volume": 0.0852
+            },
+            {
+                "postcode": "7000",
+                "latitude": -42.878355,
+                "longitude": 147.308002,
+                "type": "Load",
+                "volume": 0.02405721
+            },
+            {
+                "postcode": "7004",
+                "latitude": -42.890148,
+                "longitude": 147.328928,
+                "type": "Gen",
+                "volume": 0.0064
+            },
+            {
+                "postcode": "7004",
+                "latitude": -42.890148,
+                "longitude": 147.328928,
+                "type": "Load",
+                "volume": 0.09620813
+            },
+            {
+                "postcode": "7005",
+                "latitude": -42.916204,
+                "longitude": 147.3368,
+                "type": "Load",
+                "volume": 0.00171837
+            },
+            {
+                "postcode": "7008",
+                "latitude": -42.861932,
+                "longitude": 147.293268,
+                "type": "Load",
+                "volume": 1.3423
+            },
+            {
+                "postcode": "7009",
+                "latitude": -42.842607,
+                "longitude": 147.289682,
+                "type": "Gen",
+                "volume": 0.15
+            },
+            {
+                "postcode": "7009",
+                "latitude": -42.842607,
+                "longitude": 147.289682,
+                "type": "Load",
+                "volume": 0.6247
+            },
+            {
+                "postcode": "7009",
+                "latitude": -42.842607,
+                "longitude": 147.289682,
+                "type": "Load",
+                "volume": 0.7324
+            },
+            {
+                "postcode": "7009",
+                "latitude": -42.842607,
+                "longitude": 147.289682,
+                "type": "Load",
+                "volume": 0.04811442
+            },
+            {
+                "postcode": "7009",
+                "latitude": -42.842607,
+                "longitude": 147.289682,
+                "type": "Load",
+                "volume": 0.13918814
+            },
+            {
+                "postcode": "7010",
+                "latitude": -42.85913,
+                "longitude": 147.212366,
+                "type": "Load",
+                "volume": 0.05326953
+            },
+            {
+                "postcode": "7010",
+                "latitude": -42.85913,
+                "longitude": 147.212366,
+                "type": "Load",
+                "volume": 0.1317
+            },
+            {
+                "postcode": "7011",
+                "latitude": -42.793393,
+                "longitude": 147.230065,
+                "type": "Load",
+                "volume": 3.0622
+            },
+            {
+                "postcode": "7011",
+                "latitude": -42.793393,
+                "longitude": 147.230065,
+                "type": "Load",
+                "volume": 0.7036
+            },
+            {
+                "postcode": "7015",
+                "latitude": -42.83903,
+                "longitude": 147.360174,
+                "type": "Load",
+                "volume": 0.019
+            },
+            {
+                "postcode": "7015",
+                "latitude": -42.83903,
+                "longitude": 147.360174,
+                "type": "Load",
+                "volume": 0.0303
+            },
+            {
+                "postcode": "7017",
+                "latitude": -42.719274,
+                "longitude": 147.315111,
+                "type": "Load",
+                "volume": 0.04639605
+            },
+            {
+                "postcode": "7026",
+                "latitude": -42.646044,
+                "longitude": 147.451363,
+                "type": "Load",
+                "volume": 0.04467767
+            },
+            {
+                "postcode": "7026",
+                "latitude": -42.646044,
+                "longitude": 147.451363,
+                "type": "Load",
+                "volume": 0.02577558
+            },
+            {
+                "postcode": "7030",
+                "latitude": -42.304288,
+                "longitude": 146.958381,
+                "type": "Load",
+                "volume": 0.09279209
+            },
+            {
+                "postcode": "7050",
+                "latitude": -42.975502,
+                "longitude": 147.298181,
+                "type": "Load",
+                "volume": 0.8747
+            },
+            {
+                "postcode": "7054",
+                "latitude": -43.00658,
+                "longitude": 147.256698,
+                "type": "Load",
+                "volume": 0.0309307
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0.20792302
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0.00343674
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0.00343674
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0.01031023
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0.34367442
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0.01374698
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 1.7909
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 4.3789
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0.021
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Load",
+                "volume": 0.007
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Gen",
+                "volume": 0.0002
+            },
+            {
+                "postcode": "7109",
+                "latitude": -43.571087,
+                "longitude": 146.524064,
+                "type": "Gen",
+                "volume": 0.2828
+            },
+            {
+                "postcode": "7112",
+                "latitude": -43.291937,
+                "longitude": 147.140014,
+                "type": "Gen",
+                "volume": 0.0008
+            },
+            {
+                "postcode": "7112",
+                "latitude": -43.291937,
+                "longitude": 147.140014,
+                "type": "Load",
+                "volume": 1.8914
+            },
+            {
+                "postcode": "7140",
+                "latitude": -42.544215,
+                "longitude": 146.45502,
+                "type": "Load",
+                "volume": 0.0429593
+            },
+            {
+                "postcode": "7140",
+                "latitude": -42.544215,
+                "longitude": 146.45502,
+                "type": "Load",
+                "volume": 0.19245767
+            },
+            {
+                "postcode": "7140",
+                "latitude": -42.544215,
+                "longitude": 146.45502,
+                "type": "Load",
+                "volume": 4.4592
+            },
+            {
+                "postcode": "7140",
+                "latitude": -42.544215,
+                "longitude": 146.45502,
+                "type": "Load",
+                "volume": 4.7938
+            },
+            {
+                "postcode": "7150",
+                "latitude": -43.077586,
+                "longitude": 147.958441,
+                "type": "Load",
+                "volume": 0.0395
+            },
+            {
+                "postcode": "7170",
+                "latitude": -42.85132,
+                "longitude": 147.449794,
+                "type": "Gen",
+                "volume": 0.0332
+            },
+            {
+                "postcode": "7172",
+                "latitude": -42.730285,
+                "longitude": 147.631695,
+                "type": "Load",
+                "volume": 0.0222
+            },
+            {
+                "postcode": "7173",
+                "latitude": -42.823649,
+                "longitude": 147.630737,
+                "type": "Gen",
+                "volume": 0.0004
+            },
+            {
+                "postcode": "7177",
+                "latitude": -42.884195,
+                "longitude": 147.976495,
+                "type": "Load",
+                "volume": 0.0975
+            },
+            {
+                "postcode": "7190",
+                "latitude": -42.62988,
+                "longitude": 148.091696,
+                "type": "Load",
+                "volume": 0.0828
+            },
+            {
+                "postcode": "7190",
+                "latitude": -42.62988,
+                "longitude": 148.091696,
+                "type": "Load",
+                "volume": 3.8815
+            },
+            {
+                "postcode": "7209",
+                "latitude": -42.104584,
+                "longitude": 147.614307,
+                "type": "Load",
+                "volume": 0.18902093
+            },
+            {
+                "postcode": "7209",
+                "latitude": -42.104584,
+                "longitude": 147.614307,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "7210",
+                "latitude": -41.915923,
+                "longitude": 147.410747,
+                "type": "Load",
+                "volume": 0.3687
+            },
+            {
+                "postcode": "7215",
+                "latitude": -42.314526,
+                "longitude": 148.281407,
+                "type": "Gen",
+                "volume": 0.01718372
+            },
+            {
+                "postcode": "7216",
+                "latitude": -41.284242,
+                "longitude": 148.076401,
+                "type": "Load",
+                "volume": 0.1614
+            },
+            {
+                "postcode": "7248",
+                "latitude": -41.397239,
+                "longitude": 147.130185,
+                "type": "Load",
+                "volume": 0.0118
+            },
+            {
+                "postcode": "7248",
+                "latitude": -41.397239,
+                "longitude": 147.130185,
+                "type": "Load",
+                "volume": 0.10825744
+            },
+            {
+                "postcode": "7248",
+                "latitude": -41.397239,
+                "longitude": 147.130185,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "7249",
+                "latitude": -41.472435,
+                "longitude": 147.157786,
+                "type": "Load",
+                "volume": 0.8609
+            },
+            {
+                "postcode": "7249",
+                "latitude": -41.472435,
+                "longitude": 147.157786,
+                "type": "Load",
+                "volume": 0.0061
+            },
+            {
+                "postcode": "7250",
+                "latitude": -41.432254,
+                "longitude": 147.077589,
+                "type": "Load",
+                "volume": 0.2267
+            },
+            {
+                "postcode": "7250",
+                "latitude": -41.432254,
+                "longitude": 147.077589,
+                "type": "Load",
+                "volume": 1.104
+            },
+            {
+                "postcode": "7250",
+                "latitude": -41.432254,
+                "longitude": 147.077589,
+                "type": "Load",
+                "volume": 0.0804
+            },
+            {
+                "postcode": "7250",
+                "latitude": -41.432254,
+                "longitude": 147.077589,
+                "type": "Load",
+                "volume": 0.0178
+            },
+            {
+                "postcode": "7250",
+                "latitude": -41.432254,
+                "longitude": 147.077589,
+                "type": "Gen",
+                "volume": 0.01890209
+            },
+            {
+                "postcode": "7250",
+                "latitude": -41.432254,
+                "longitude": 147.077589,
+                "type": "Load",
+                "volume": 1.11694185
+            },
+            {
+                "postcode": "7250",
+                "latitude": -41.432254,
+                "longitude": 147.077589,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "7250",
+                "latitude": -41.432254,
+                "longitude": 147.077589,
+                "type": "Load",
+                "volume": 0.911
+            },
+            {
+                "postcode": "7250",
+                "latitude": -41.432254,
+                "longitude": 147.077589,
+                "type": "Load",
+                "volume": 0.0043
+            },
+            {
+                "postcode": "7250",
+                "latitude": -41.432254,
+                "longitude": 147.077589,
+                "type": "Load",
+                "volume": 0.0828
+            },
+            {
+                "postcode": "7250",
+                "latitude": -41.432254,
+                "longitude": 147.077589,
+                "type": "Load",
+                "volume": 0.1494
+            },
+            {
+                "postcode": "7250",
+                "latitude": -41.432254,
+                "longitude": 147.077589,
+                "type": "Load",
+                "volume": 1.5374
+            },
+            {
+                "postcode": "7262",
+                "latitude": -40.801511,
+                "longitude": 147.630044,
+                "type": "Load",
+                "volume": 0.01031023
+            },
+            {
+                "postcode": "7262",
+                "latitude": -40.801511,
+                "longitude": 147.630044,
+                "type": "Load",
+                "volume": 1.0031
+            },
+            {
+                "postcode": "7264",
+                "latitude": -41.015197,
+                "longitude": 148.026137,
+                "type": "Load",
+                "volume": 0
+            },
+            {
+                "postcode": "7264",
+                "latitude": -41.015197,
+                "longitude": 148.026137,
+                "type": "Gen",
+                "volume": 0.0015
+            },
+            {
+                "postcode": "7270",
+                "latitude": -41.177924,
+                "longitude": 146.783947,
+                "type": "Gen",
+                "volume": 0.0056
+            },
+            {
+                "postcode": "7307",
+                "latitude": -41.210495,
+                "longitude": 146.57356,
+                "type": "Gen",
+                "volume": 0.0125
+            },
+            {
+                "postcode": "7310",
+                "latitude": -41.237355,
+                "longitude": 146.239406,
+                "type": "Load",
+                "volume": 1.7956
+            },
+            {
+                "postcode": "7316",
+                "latitude": -41.269708,
+                "longitude": 145.931776,
+                "type": "Gen",
+                "volume": 0.0120286
+            },
+            {
+                "postcode": "7320",
+                "latitude": -41.08422,
+                "longitude": 145.862079,
+                "type": "Load",
+                "volume": 0.19761279
+            },
+            {
+                "postcode": "7320",
+                "latitude": -41.08422,
+                "longitude": 145.862079,
+                "type": "Load",
+                "volume": 0.0794
+            },
+            {
+                "postcode": "7330",
+                "latitude": -40.782341,
+                "longitude": 145.057623,
+                "type": "Load",
+                "volume": 0.007
+            },
+            {
+                "postcode": "7467",
+                "latitude": -42.093728,
+                "longitude": 145.529693,
+                "type": "Load",
+                "volume": 0.0824
+            },
+            {
+                "postcode": "7468",
+                "latitude": -42.706031,
+                "longitude": 145.537671,
+                "type": "Gen",
+                "volume": 0.0041
+            },
+            {
+                "postcode": "7468",
+                "latitude": -42.706031,
+                "longitude": 145.537671,
+                "type": "Load",
+                "volume": 0
+            }
+        ],
+        "updated": "06/02/2024 11:25:21 AM AEDT"
+    }
+}
