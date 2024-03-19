@@ -1,5 +1,7 @@
 import requests
-from datetime import datetime
+from datetime import datetime, timedelta
+from dateutil import tz
+import pandas as pd
 
 class CustomerIntervalData:
     def __init__(self, json_data):
@@ -34,6 +36,9 @@ class CustomerAPI:
                 params['from'] = from_time.strftime('%Y-%m-%dT%H:%M:00Z')
             else:
                 params['from'] = from_time
+        else:
+            # Max is 3 days ago
+            params['from'] = (datetime.now().astimezone().replace(hour=0, minute=0, second=0, microsecond=0).astimezone(tz.UTC) - timedelta(days=1)).strftime('%Y-%m-%dT%H:%M:00Z')
         if to_time:
             if isinstance(to_time, datetime):
                 params['to'] = to_time.strftime('%Y-%m-%dT%H:%M:00Z')
@@ -45,3 +50,18 @@ class CustomerAPI:
             reason = response.content.decode('utf-8')
             raise requests.HTTPError(f"{response.status_code} {response.reason}: {reason}")
         return CustomerIntervalData(response.json())
+
+    def get_interval_data_df(self, nmi='*', from_time=None, to_time=None):
+        """
+        Fetches interval data for a given NMI and time range and returns it as a pandas DataFrame.
+
+        :param nmi: str - The NMI to query. Use '*' for all NMIs.
+        :param from_time: str - The start time in ISO 8601 UTC format.
+        :param to_time: str - The end time in ISO 8601 UTC format.
+        :return: pandas.DataFrame - The response data as a DataFrame.
+        """
+        data = self.get_interval_data(nmi, from_time, to_time).data
+        df = pd.DataFrame(data)
+        df['interval_time'] = pd.to_datetime(df['intervalEnd'], utc=True).dt.tz_convert('Australia/Brisbane')
+        df.set_index('interval_time', inplace=True)
+        return df
