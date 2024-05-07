@@ -63,6 +63,6 @@ class CustomerAPI:
         """
         data = self.get_interval_data(nmi, from_time, to_time).data
         df = pd.DataFrame(data)
-        df['interval_time'] = pd.to_datetime(df['intervalEnd'], utc=True).dt.tz_convert(time_zone)
+        df['interval_time'] = pd.to_datetime(df['intervalEnd']).dt.tz_localize(None).dt.tz_localize(time_zone)
         df.set_index('interval_time', inplace=True)
         return df
