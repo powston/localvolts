@@ -8,7 +8,6 @@ First update setup.py with the new version number. Then run the following comman
 
 ```bash
 python setup.py sdist bdist_wheel
-twine upload dist/*
 ```
 
 Also tag the release via a git tag and push it to the repository:
