@@ -21,7 +21,7 @@ class CustomerAPI:
         """
         self.auth = auth
 
-    def get_interval_data(self, nmi='*', from_time=None, to_time=None):
+    def get_interval_data(self, nmi='*', from_time=None, to_time=None, time_zone='Australia/Brisbane'):
         """
         Fetches interval data for a given NMI and time range.
 
@@ -38,7 +38,8 @@ class CustomerAPI:
                 params['from'] = from_time
         else:
             # Max is 3 days ago
-            params['from'] = (datetime.now().astimezone().replace(hour=0, minute=0, second=0, microsecond=0).astimezone(tz.UTC) - timedelta(days=1)).strftime('%Y-%m-%dT%H:%M:00Z')
+            _tz = tz.gettz(time_zone)
+            params['from'] = (datetime.now().astimezone().replace(hour=0, minute=0, second=0, microsecond=0).astimezone(_tz) - timedelta(days=1)).strftime('%Y-%m-%dT%H:%M:00Z')
         if to_time:
             if isinstance(to_time, datetime):
                 params['to'] = to_time.strftime('%Y-%m-%dT%H:%M:00Z')
@@ -51,7 +52,7 @@ class CustomerAPI:
             raise requests.HTTPError(f"{response.status_code} {response.reason}: {reason}")
         return CustomerIntervalData(response.json())
 
-    def get_interval_data_df(self, nmi='*', from_time=None, to_time=None):
+    def get_interval_data_df(self, nmi='*', from_time=None, to_time=None, time_zone='Australia/Brisbane'):
         """
         Fetches interval data for a given NMI and time range and returns it as a pandas DataFrame.
 
@@ -62,6 +63,6 @@ class CustomerAPI:
         """
         data = self.get_interval_data(nmi, from_time, to_time).data
         df = pd.DataFrame(data)
-        df['interval_time'] = pd.to_datetime(df['intervalEnd'], utc=True).dt.tz_convert('Australia/Brisbane')
+        df['interval_time'] = pd.to_datetime(df['intervalEnd'], utc=True).dt.tz_convert(time_zone)
         df.set_index('interval_time', inplace=True)
         return df
