@@ -17,3 +17,11 @@ Also tag the release via a git tag and push it to the repository:
 git tag -a v0.2 -m "Release 0.2"
 git push origin v0.2
 ```
+
+## Use
+
+Link directly to this tag in your requirements.txt file:
+
+```
+localvolts_api @ git+https://github.com/iconnor/localvolts@v0.2
+``` 
