@@ -43,6 +43,9 @@ class CustomerAPI:
             _tz = tz.gettz(time_zone)
             from_time = (datetime.now().astimezone().replace(hour=0, minute=0, second=0, microsecond=0).astimezone(_tz) - timedelta(days=2))
             from_time = from_time.astimezone(tz.UTC)
+            days_ago = datetime.now().day - from_time.day
+            if days_ago > 2:
+                from_time = from_time + timedelta(days=(days_ago-2))
             params['from'] = from_time.strftime('%Y-%m-%dT%H:%M:00Z')
 
         if to_time:
