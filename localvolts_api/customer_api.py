@@ -33,15 +33,21 @@ class CustomerAPI:
         params = {'NMI': nmi}
         if from_time:
             if isinstance(from_time, datetime):
+                # Change to UTC
+                from_time = from_time.astimezone(tz.UTC)
                 params['from'] = from_time.strftime('%Y-%m-%dT%H:%M:00Z')
             else:
                 params['from'] = from_time
         else:
             # Max is 3 days ago
             _tz = tz.gettz(time_zone)
-            params['from'] = (datetime.now().astimezone().replace(hour=0, minute=0, second=0, microsecond=0).astimezone(_tz) - timedelta(days=1)).strftime('%Y-%m-%dT%H:%M:00Z')
+            from_time = (datetime.now().astimezone().replace(hour=0, minute=0, second=0, microsecond=0).astimezone(_tz) - timedelta(days=2))
+            from_time = from_time.astimezone(tz.UTC)
+            params['from'] = from_time.strftime('%Y-%m-%dT%H:%M:00Z')
+
         if to_time:
             if isinstance(to_time, datetime):
+                to_time = to_time.astimezone(tz.UTC)
                 params['to'] = to_time.strftime('%Y-%m-%dT%H:%M:00Z')
             else:
                 params['to'] = to_time
@@ -63,6 +69,6 @@ class CustomerAPI:
         """
         data = self.get_interval_data(nmi, from_time, to_time).data
         df = pd.DataFrame(data)
-        df['interval_time'] = pd.to_datetime(df['intervalEnd']).dt.tz_localize(None).dt.tz_localize(time_zone)
+        df['interval_time'] = pd.to_datetime(df['intervalEnd']).dt.tz_convert(time_zone)
         df.set_index('interval_time', inplace=True)
         return df
