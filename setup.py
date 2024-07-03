@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='localvolts_api',
-    version='0.2',
+    version='0.3',
     author='Ian Connor',
     author_email='ian@blissai.com',
     description='A Python wrapper for the LocalVolts API',
@@ -10,6 +10,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         'requests',
+        'pandas'
     ],
     classifiers=[
         'Programming Language :: Python :: 3',

@@ -1,7 +1,31 @@
 import requests
+import json
 from datetime import datetime, timedelta
 from dateutil import tz
+from pydantic import BaseModel
 import pandas as pd
+
+class IntervalData(BaseModel):
+    NMI: str  # National Meter Identifier for which data is being provided. All data is that obtained at the NMI location. NMI will be a 10 character id, without checksum.
+    battery: str  # ‘A’ or ’U’ A: battery is operational and available U: battery is unavailable
+    control: str  # ‘E’ or ‘A’ E: Battery control is enabled but not activated A: Battery is being controlled externally
+    intervalDuration: int  # Duration of the interval in minutes. Default is 5 minutes
+    intervalDurationUnits: str  # ‘minutes’
+    intervalEnd: str  # Time at the end of the NEM interval, in UTC (24-hour format). Note that the NEM always runs off AEST (UTC+10)
+    importsMainLoad: float  # energy drawn from the grid on the main circuit
+    importsMainLoadUnits: str  # ‘Wh’
+    importsControlledLoad: float  # energy drawn from the grid on the controlled load circuit
+    exports: float  # energy injected into the grid
+    exportsUnits: str  # ‘Wh’
+    batteryCharging: float  # power being drawn by the battery
+    batteryChargingUnits: str  # ‘kW’
+    batteryDischarging: float  # power being discharged by the battery
+    batteryDischargingUnits: str  # ‘kW’
+    batteryEnergy: float  # useable energy stored in the battery
+    batteryEnergyUnits: str  # ‘kWh’
+    batterySOC: float  # useable energy stored in the battery as % of total capacity
+    batterySOCUnits: str  # ‘%’
+    lastUpdate: str  # date/time this data-set was updated, in UTC (YYYY-MM- DDTHH:mm:ssZ)
 
 class CustomerIntervalData:
     def __init__(self, json_data):
@@ -60,6 +84,23 @@ class CustomerAPI:
             reason = response.content.decode('utf-8')
             raise requests.HTTPError(f"{response.status_code} {response.reason}: {reason}")
         return CustomerIntervalData(response.json())
+    
+    def set_interval_data(self, nmi, interval_data: IntervalData):
+        """
+        Sets interval data for a given NMI.
+
+        :param nmi: str - The NMI to update.
+        :param interval_data: dict - The interval data to set.
+        :return: dict - The response data.
+        """
+        url = f"{self.BASE_URL}/customer/interval?NMI={nmi}"
+        print('posting to ', url)
+        print('body', json.dumps(interval_data.dict()))
+        response = requests.post(url, headers=self.auth.get_headers(), json=interval_data.dict())
+        if response.status_code != 200:
+            reason = response.content.decode('utf-8')
+            raise requests.HTTPError(f"{response.status_code} {response.reason}: {reason}")
+        return response.json()
 
     def get_interval_data_df(self, nmi='*', from_time=None, to_time=None, time_zone='Australia/Brisbane'):
         """
