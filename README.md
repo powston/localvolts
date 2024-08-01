@@ -13,8 +13,8 @@ python setup.py sdist bdist_wheel
 Also tag the release via a git tag and push it to the repository:
 
 ```bash
-git tag -a v0.2 -m "Release 0.2"
-git push origin v0.2
+git tag -a v0.6 -m "Release 0.6"
+git push origin v0.6
 ```
 
 ## Use

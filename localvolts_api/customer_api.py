@@ -5,6 +5,7 @@ from dateutil import tz
 from pydantic import BaseModel
 import pandas as pd
 
+
 class IntervalData(BaseModel):
     NMI: str  # National Meter Identifier for which data is being provided. All data is that obtained at the NMI location. NMI will be a 10 character id, without checksum.
     battery: str  # ‘A’ or ’U’ A: battery is operational and available U: battery is unavailable
@@ -84,7 +85,7 @@ class CustomerAPI:
             reason = response.content.decode('utf-8')
             raise requests.HTTPError(f"{response.status_code} {response.reason}: {reason}")
         return CustomerIntervalData(response.json())
-    
+
     def set_interval_data(self, nmi, interval_data: IntervalData):
         """
         Sets interval data for a given NMI.
