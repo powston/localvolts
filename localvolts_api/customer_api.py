@@ -55,6 +55,8 @@ class CustomerAPI:
         :param to_time: str - The end time in ISO 8601 UTC format.
         :return: CustomerIntervalData - Custom object containing the response data.
         """
+        if len(nmi) > 10:
+            nmi = nmi[0:10]
         params = {'NMI': nmi}
         if from_time:
             if isinstance(from_time, datetime):
