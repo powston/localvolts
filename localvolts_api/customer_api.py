@@ -1,9 +1,10 @@
 import requests
-import json
+import pickle
 from datetime import datetime, timedelta
 from dateutil import tz
 from pydantic import BaseModel
 import pandas as pd
+
 
 
 class IntervalData(BaseModel):
@@ -46,7 +47,7 @@ class CustomerAPI:
         """
         self.auth = auth
 
-    def get_interval_data(self, nmi='*', from_time=None, to_time=None, time_zone='Australia/Brisbane'):
+    def get_interval_data(self, nmi='*', from_time=None, to_time=None, time_zone='Australia/Brisbane', keep_log=False):
         """
         Fetches interval data for a given NMI and time range.
 
@@ -86,6 +87,10 @@ class CustomerAPI:
         if response.status_code != 200:
             reason = response.content.decode('utf-8')
             raise requests.HTTPError(f"{response.status_code} {response.reason}: {reason}")
+        if keep_log:
+            time_stamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+            with open(f'/tmp/{time_stamp}_response.pkl', 'w') as f:
+                f.write(pickle.dumps(response))
         return CustomerIntervalData(response.json())
 
     def set_interval_data(self, nmi, interval_data: IntervalData):
@@ -105,7 +110,7 @@ class CustomerAPI:
             raise requests.HTTPError(f"{response.status_code} {response.reason}: {reason}")
         return response.json()
 
-    def get_interval_data_df(self, nmi='*', from_time=None, to_time=None, time_zone='Australia/Brisbane'):
+    def get_interval_data_df(self, nmi='*', from_time=None, to_time=None, time_zone='Australia/Brisbane', keep_log=False):
         """
         Fetches interval data for a given NMI and time range and returns it as a pandas DataFrame.
 
@@ -114,7 +119,7 @@ class CustomerAPI:
         :param to_time: str - The end time in ISO 8601 UTC format.
         :return: pandas.DataFrame - The response data as a DataFrame.
         """
-        data = self.get_interval_data(nmi, from_time, to_time).data
+        data = self.get_interval_data(nmi, from_time, to_time, keep_log).data
         df = pd.DataFrame(data)
         df['interval_time'] = pd.to_datetime(df['intervalEnd']).dt.tz_convert(time_zone)
         df.set_index('interval_time', inplace=True)
