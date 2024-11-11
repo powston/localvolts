@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='localvolts_api',
-    version='0.8',
+    version='0.9',
     author='Ian Connor',
     author_email='ian@powston.com',
     description='A Python wrapper for the LocalVolts API',

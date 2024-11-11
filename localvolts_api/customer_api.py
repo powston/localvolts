@@ -87,11 +87,13 @@ class CustomerAPI:
         if response.status_code != 200:
             reason = response.content.decode('utf-8')
             raise requests.HTTPError(f"{response.status_code} {response.reason}: {reason}")
+        response_json = response.json()
         if keep_log:
             time_stamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-            with open(f'/tmp/{time_stamp}_response.pkl', 'w') as f:
-                f.write(pickle.dumps(response))
-        return CustomerIntervalData(response.json())
+            with open(f'/tmp/{time_stamp}_localvolts_response.pickle', 'wb') as f:
+                f.write(pickle.dumps({'response': response, 'response_json': response_json}))
+                print('response saved to /tmp')
+        return CustomerIntervalData(response_json)
 
     def set_interval_data(self, nmi, interval_data: IntervalData):
         """
@@ -119,7 +121,7 @@ class CustomerAPI:
         :param to_time: str - The end time in ISO 8601 UTC format.
         :return: pandas.DataFrame - The response data as a DataFrame.
         """
-        data = self.get_interval_data(nmi, from_time, to_time, keep_log).data
+        data = self.get_interval_data(nmi, from_time, to_time, keep_log=keep_log).data
         df = pd.DataFrame(data)
         df['interval_time'] = pd.to_datetime(df['intervalEnd']).dt.tz_convert(time_zone)
         df.set_index('interval_time', inplace=True)
