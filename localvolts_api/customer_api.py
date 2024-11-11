@@ -7,7 +7,6 @@ from pydantic import BaseModel
 import pandas as pd
 
 
-
 class IntervalData(BaseModel):
     NMI: str  # National Meter Identifier for which data is being provided. All data is that obtained at the NMI location. NMI will be a 10 character id, without checksum.
     battery: str  # ‘A’ or ’U’ A: battery is operational and available U: battery is unavailable
@@ -90,7 +89,7 @@ class CustomerAPI:
             raise requests.HTTPError(f"{response.status_code} {response.reason}: {reason}")
         response_json = response.json()
         if keep_log:
-            time_stamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+            time_stamp = datetime.now().strftime('%Y-%m-%d_%H-%M-%S.%f')
             with open(f'/tmp/{time_stamp}_localvolts_response.pickle', 'wb') as f:
                 f.write(pickle.dumps({'response': response, 'response_json': response_json}))
                 print('response saved to /tmp')
