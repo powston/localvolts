@@ -4,9 +4,9 @@ setup(
     name='localvolts_api',
     version='0.8',
     author='Ian Connor',
-    author_email='ian@blissai.com',
+    author_email='ian@powston.com',
     description='A Python wrapper for the LocalVolts API',
-    url='https://github.com/iconnor/localvolts',
+    url='https://github.com/powston/localvolts',
     packages=find_packages(),
     install_requires=[
         'requests',
